@@ -1,0 +1,42 @@
+package w6d4;
+
+import java.util.LinkedList;
+import java.util.Scanner;
+
+
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		LinkedList<String> student = new LinkedList<String>();
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("\nMenu to:" + 
+				"\n  1 - add student" + 
+				"\n  2 - display student" +
+				"\n  3 - remove student" +
+				"\n  4 - quit");
+		
+
+		student.add("Alex Smith");
+		student.add("Michael Jacson");
+		student.add("Hana Yamada");
+		
+		
+		for(String s : student) {
+			System.out.println(s);
+		}
+		
+		student.pop();
+		
+		System.out.println("\nAfter poped: \n");
+		
+		for(String s : student) {
+			System.out.println(s);
+		}
+		
+	}
+
+}

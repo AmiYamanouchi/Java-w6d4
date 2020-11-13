@@ -1,0 +1,24 @@
+package w6d4;
+
+import java.util.LinkedList;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		LinkedList<String> student = new LinkedList<String>();
+
+		student.add("Alex Smith");
+		student.add("Michael Jacson");
+		student.add("Hana Yamada");
+		
+		student.pop();
+		
+		for(String s : student) {
+			System.out.println(s);
+		}
+		
+		
+	}
+
+}
